@@ -1,0 +1,29 @@
+diff --git "a/source/application/views/admin/tpl/popups/article_attribute.tpl" "b/source/application/views/admin/tpl/popups/article_attribute.tpl"
+index 8c7f89f59..8debd4f08 100644
+--- "a/source/application/views/admin/tpl/popups/article_attribute.tpl"
++++ "b/source/application/views/admin/tpl/popups/article_attribute.tpl"
+@@ -49,6 +49,7 @@
+                 $('_attrname').innerHTML = oParam._oData._0;
+                 $('attr_value').value    = oParam._oData._2;
+                 $('attr_oxid').value     = oParam._oData._3;
++                $('o2attr_oxid').value   = oParam._oData._1;   [{*** d3 completed ***}]
+                 $D.setStyle( $('arrt_conf'), 'visibility', '' );
+             } else {
+                 $D.setStyle( $('arrt_conf'), 'visibility', 'hidden' );
+@@ -73,7 +74,7 @@
+                 failure: YAHOO.oxid.container2.onFailure,
+                 scope:   YAHOO.oxid.container2
+             };
+-            YAHOO.util.Connect.asyncRequest( 'GET', '[{ $oViewConf->getAjaxLink() }]&cmpid=container2&container=article_attribute&fnc=saveAttributeValue&oxid=[{ $oxid }]&attr_value=' + encodeURIComponent( $('attr_value').value ) + '&attr_oxid=' + encodeURIComponent( $('attr_oxid').value ), callback );
++            YAHOO.util.Connect.asyncRequest( 'GET', '[{ $oViewConf->getAjaxLink() }]&cmpid=container2&container=article_attribute&fnc=saveAttributeValue&oxid=[{ $oxid }]&attr_value=' + encodeURIComponent( $('attr_value').value ) + '&attr_oxid=' + encodeURIComponent( $('attr_oxid').value ) + '&o2attr_oxid=' + encodeURIComponent( $('o2attr_oxid').value ), callback );  [{*** d3 completed***}]
+ 
+         }
+         // subscribint event listeners on buttons
+@@ -101,6 +102,7 @@
+             <td valign="top" align="center" class="edittext" id="arrt_conf" style="visibility:hidden">
+               <br><br>
+               <b id="_attrname">[{ $attr_name }]</b>:<br><br>
++              <input id="o2attr_oxid" type="hidden">   [{*** d3 completed ***}]
+               <input id="attr_oxid" type="hidden">
+               <input id="attr_value" class="editinput" type="text"><br><br>
+               <input id="saveBtn" type="button" class="edittext" value="[{ oxmultilang ident="ARTICLE_ATTRIBUTE_SAVE" }]">

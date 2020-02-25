@@ -9,10 +9,12 @@
  *
  * http://www.shopmodule.com
  *
- * @copyright © D³ Data Development, Thomas Dartsch
- * @author    D³ Data Development - Daniel Seifert <ds@shopmodule.com>
+ * @copyright ï¿½ Dï¿½ Data Development, Thomas Dartsch
+ * @author    Dï¿½ Data Development - Daniel Seifert <ds@shopmodule.com>
  * @link      http://www.oxidmodule.com
  */
+
+namespace D3\Modules\AttributeMultiValues\Application\Model;
 
 class d3_oxattributelist_multivalues extends d3_oxattributelist_multivalues_parent
 {
