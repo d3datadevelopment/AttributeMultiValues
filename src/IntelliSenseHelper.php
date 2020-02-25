@@ -17,12 +17,9 @@
 
 namespace D3\Modules\AttributeMultiValues\Application\Controllers\Admin {
 
-    use OxidEsales\Eshop\Application\Controller\Admin\ArticleAttribute;
     use OxidEsales\Eshop\Application\Controller\Admin\ArticleAttributeAjax;
 
     class d3_article_attribute_ajax_multivalues_parent extends ArticleAttributeAjax {}
-
-    class d3_article_attribute_multivalues_parent extends ArticleAttribute {}
 }
 
 namespace D3\Modules\AttributeMultiValues\Application\Model {

@@ -14,9 +14,7 @@
  */
 
 use D3\Modules\AttributeMultiValues\Application\Controllers\Admin\d3_article_attribute_ajax_multivalues;
-use D3\Modules\AttributeMultiValues\Application\Controllers\Admin\d3_article_attribute_multivalues;
 use D3\Modules\AttributeMultiValues\Application\Model\d3_oxattributelist_multivalues;
-use OxidEsales\Eshop\Application\Controller\Admin\ArticleAttribute;
 use OxidEsales\Eshop\Application\Controller\Admin\ArticleAttributeAjax;
 use OxidEsales\Eshop\Application\Model\AttributeList;
 
@@ -37,10 +35,6 @@ $aModule = array(
     'url'         => 'http://www.oxidmodule.com/',
     'extend'      => [
         ArticleAttributeAjax::class     => d3_article_attribute_ajax_multivalues::class,
-        ArticleAttribute::class         => d3_article_attribute_multivalues::class,
         AttributeList::class            => d3_oxattributelist_multivalues::class,
-    ],
-    'templates'   => [
-        'd3_article_attribute_multivalues.tpl' => 'd3/d3multiattributevalues/Application/views/admin/tpl/d3_article_attribute_multivalues.tpl',
     ]
 );
