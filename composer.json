@@ -2,7 +2,6 @@
   "name": "d3/attributemultivalues",
   "description": "mehrfache Wertezuordnung zu Attributen",
   "type": "oxideshop-module",
-  "version": "1.0",
   "keywords": [
     "oxid",
     "modules",
