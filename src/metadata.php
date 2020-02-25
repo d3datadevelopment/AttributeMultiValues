@@ -13,8 +13,8 @@
  * @link      http://www.oxidmodule.com
  */
 
-use D3\Modules\AttributeMultiValues\Application\Controllers\Admin\d3_article_attribute_ajax_multivalues;
-use D3\Modules\AttributeMultiValues\Application\Model\d3_oxattributelist_multivalues;
+use D3\AttributeMultiValues\Modules\Application\Controllers\Admin\d3_article_attribute_ajax_multivalues;
+use D3\AttributeMultiValues\Modules\Application\Model\d3_oxattributelist_multivalues;
 use OxidEsales\Eshop\Application\Controller\Admin\ArticleAttributeAjax;
 use OxidEsales\Eshop\Application\Model\AttributeList;
 

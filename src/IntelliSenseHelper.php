@@ -15,14 +15,14 @@
  * @link      http://www.oxidmodule.com
  */
 
-namespace D3\Modules\AttributeMultiValues\Application\Controllers\Admin {
+namespace D3\AttributeMultiValues\Modules\Application\Controllers\Admin {
 
     use OxidEsales\Eshop\Application\Controller\Admin\ArticleAttributeAjax;
 
     class d3_article_attribute_ajax_multivalues_parent extends ArticleAttributeAjax {}
 }
 
-namespace D3\Modules\AttributeMultiValues\Application\Model {
+namespace D3\AttributeMultiValues\Modules\Application\Model {
 
     use OxidEsales\Eshop\Application\Model\AttributeList;
 

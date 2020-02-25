@@ -14,7 +14,7 @@
  * @link      http://www.oxidmodule.com
  */
 
-namespace D3\Modules\AttributeMultiValues\Application\Model;
+namespace D3\AttributeMultiValues\Modules\Application\Model;
 
 class d3_oxattributelist_multivalues extends d3_oxattributelist_multivalues_parent
 {

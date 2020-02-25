@@ -15,7 +15,7 @@
  * @link      http://www.oxidmodule.com
  */
 
-namespace D3\Modules\AttributeMultiValues\Application\Controllers\Admin;
+namespace D3\AttributeMultiValues\Modules\Application\Controllers\Admin;
 
 use Exception;
 use OxidEsales\Eshop\Application\Model\Article;
@@ -39,8 +39,9 @@ class d3_article_attribute_ajax_multivalues extends d3_article_attribute_ajax_mu
         $sArtId = Registry::getRequest()->getRequestParameter('oxid');
 
         if (false == $sArtId) {
+            /** @var Attribute $attribute */
             $attribute = oxNew(Attribute::class);
-            $sAttrViewName = $attribute->_getViewName();
+            $sAttrViewName = $attribute->getViewName();
             $sQAdd = " from {$sAttrViewName} where {$sAttrViewName}.oxid ";
         }
 
