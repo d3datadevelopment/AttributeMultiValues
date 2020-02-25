@@ -28,7 +28,7 @@
     },
     "patches": {
       "oxid-esales/oxideshop-ce": {
-        "add multi assignment to article attribute ajax template - 2020-02-25": "vendor/d3/attributemultivalues/patches/article_attribute_ajax.patch"
+        "add multi assignment to article attribute ajax template - 2020-02-25-1": "https://git.d3data.de/D3Public/AttributeMultiValues/raw/branch/rel_2.x/patches/article_attribute_ajax.patch"
       }
     }
   },
