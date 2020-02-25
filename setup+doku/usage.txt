@@ -1,8 +1,0 @@
-entwickelt in EE 5.2.1
-
-ermöglicht, im Admin ein Attribute einem Artikel mehrfach mit unterschiedlichen Werten zuzuordnen
-
-Artikel A
--> Farbe "rot"
--> Farbe "grün"
--> Material "Stoff"
