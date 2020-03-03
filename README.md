@@ -19,5 +19,5 @@ These additional filter options can be used in our [advanced search](https://pac
 Run this composer statement in your shop. Adjust this command if your installation requires it.
 
 ```
-composer require d3/d3/attributemultivalues --update-no-dev
+composer require d3/attributemultivalues --update-no-dev
 ```
