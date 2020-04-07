@@ -32,7 +32,7 @@
     }
   },
   "require": {
-    "oxid-esales/oxideshop-ce": "^6.1.0"
+    "oxid-esales/oxideshop-ce": "6.1 - 6.3"
   },
   "autoload": {
     "psr-4": {
