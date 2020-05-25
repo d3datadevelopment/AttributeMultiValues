@@ -22,8 +22,10 @@
   ],
   "extra": {
     "oxideshop": {
-      "source-directory": "/src",
-      "target-directory": "d3/attributemultivalues"
+      "target-directory": "d3/attributemultivalues",
+      "blacklist-filter": [
+        "patches/**/*"
+      ]
     },
     "patches": {
       "oxid-esales/oxideshop-ce": {
