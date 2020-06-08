@@ -24,7 +24,9 @@
     "oxideshop": {
       "target-directory": "d3/attributemultivalues",
       "blacklist-filter": [
-        "patches/**/*"
+        "patches/**/*",
+        "composer.json",
+        "README.md"
       ]
     },
     "patches": {
