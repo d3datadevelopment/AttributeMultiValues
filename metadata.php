@@ -28,7 +28,13 @@ $sMetadataVersion = '2.1';
  */
 $aModule = array(
     'id'          => 'd3attributemultivalues',
-    'title'       => 'D&sup3; mehrfache Wertezuordnung zu Attributen',
+    'title'       => [
+        'de'    => 
+            '<svg style="height:1em;width:1em"><image xlink:href="https://logos.oxidmodule.com/d3logo.svg" style="height:1em;width:1em" /></svg> '.
+            'mehrfache Wertezuordnung zu Attributen',
+        'en'    => 
+            '<svg style="height:1em;width:1em"><image xlink:href="https://logos.oxidmodule.com/d3logo.svg" style="height:1em;width:1em" /></svg> '.
+            'multiple value assignment to attributes',
     'version'     => '0.0.0.1',
     'author'      => 'D&sup3; Data Development (Inh.: Thomas Dartsch)',
     'email'       => 'support@shopmodule.com',
