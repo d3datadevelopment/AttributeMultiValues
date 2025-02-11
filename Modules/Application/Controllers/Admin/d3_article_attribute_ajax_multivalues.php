@@ -28,7 +28,7 @@ use OxidEsales\Eshop\Core\Registry;
 class d3_article_attribute_ajax_multivalues extends d3_article_attribute_ajax_multivalues_parent
 {
     /**
-     * Returns SQL query for data to fetc
+     * Returns SQL query for data to fetch
      *
      * @return string
      */
@@ -64,7 +64,6 @@ class d3_article_attribute_ajax_multivalues extends d3_article_attribute_ajax_mu
         $articleId = $request->getRequestParameter("oxid");
         $attributeId = $request->getRequestParameter("attr_oxid");
         $attributeValue = $request->getRequestParameter("attr_value");
-
         $article = oxNew(Article::class);
         if ($article->load($articleId)) {
             if ($article->isDerived()) {
@@ -75,9 +74,9 @@ class d3_article_attribute_ajax_multivalues extends d3_article_attribute_ajax_mu
 
             if (isset($attributeId) && ("" != $attributeId)) {
                 $viewName = $this->_getViewName("oxobject2attribute");
-                $quotedArticleId = $database->quote($article->getId());
-                // D3: remove unused attrid selection
-                $select = "select * from {$viewName} where {$viewName}.oxobjectid= {$quotedArticleId}";
+                $quotedObject2Id = $database->quote($request->getRequestEscapedParameter('o2attr_oxid'));
+                // D3: switch to ObjectTo oxid
+                $select = "select * from {$viewName} where {$viewName}.oxid= {$quotedObject2Id}";
                 $objectToAttribute = oxNew(MultiLanguageModel::class);
                 $objectToAttribute->setLanguage($request->getRequestParameter('editlanguage'));
                 $objectToAttribute->init("oxobject2attribute");
